@@ -1,0 +1,25 @@
+/* Sidebar Root */
+.sidebar-root {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+
+  /* USE THEME VARIABLES */
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  border-right: 1px solid var(--border);
+
+  font-size: 13px;
+  transition: background 0.25s ease, color 0.25s ease, border 0.25s ease;
+}
+
+/* Scrollbar */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--border); /* Light & dark compatible */
+  border-radius: 999px;
+}

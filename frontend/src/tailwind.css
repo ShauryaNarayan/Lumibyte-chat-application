@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --------------------------------------------------
+   GLOBAL THEME STYLING (LIGHT + DARK)
+   Tailwind will now apply styles globally based on:
+   html.dark  ← controlled by ThemeToggle component
+-------------------------------------------------- */
+
+/* Default Light Mode */
+html {
+  @apply bg-white text-gray-900 transition-colors duration-300;
+}
+
+/* Dark Mode */
+html.dark {
+  @apply bg-gray-900 text-gray-100 transition-colors duration-300;
+}
+
+/* Ensure the body fills the screen */
+body {
+  @apply min-h-screen;
+}

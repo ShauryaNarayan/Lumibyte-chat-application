@@ -1,0 +1,83 @@
+/* ---------- Chat Input Container ---------- */
+.chatinput-root {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+}
+
+/* Chat input wrapper bubble */
+.chatinput-form {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+/* ---------- Input Field ---------- */
+.chatinput-input {
+  flex: 1;
+  font-size: 0.95rem;
+  color: var(--text);
+
+  background: var(--input-bg);
+  border: none;
+  outline: none;
+
+  padding: 0.5rem 0.5rem;
+  border-radius: 999px;
+
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.chatinput-input::placeholder {
+  color: var(--text-light);
+}
+
+/* Focus glow effect */
+.chatinput-input:focus {
+  border-color: #4f46e5; /* Indigo-600 */
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.35);
+}
+
+/* ---------- Send Button ---------- */
+.chatinput-button {
+  padding: 0.55rem 1.1rem;
+  min-width: 72px;
+
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #fff;
+
+  background-image: linear-gradient(90deg, #4f46e5, #ec4899);
+  transition: filter 0.15s ease, transform 0.1s ease;
+}
+
+.chatinput-button:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.chatinput-button:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.chatinput-button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}

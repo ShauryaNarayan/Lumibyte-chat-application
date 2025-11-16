@@ -1,0 +1,116 @@
+.chatwindow-root {
+  flex: 1;
+  display: flex;
+  padding: 1.5rem 1rem;
+  color: var(--text);
+  background: var(--bg);
+  transition: background 0.25s, color 0.25s;
+}
+
+.chatwindow-inner {
+  margin: 0 auto;
+  max-width: 900px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Messages area */
+.chatwindow-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 1rem;
+}
+
+.chatwindow-block {
+  margin-bottom: 1rem;
+}
+
+/* Empty state */
+.chatwindow-empty {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.chatwindow-empty h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.chatwindow-empty p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.chatwindow-hint {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+}
+
+/* Chat bubbles */
+.chat-bubble {
+  display: flex;
+  margin-bottom: 0.4rem;
+}
+
+/* User bubble */
+.chat-bubble-user {
+  justify-content: flex-end;
+}
+
+.chat-bubble-user > p {
+  max-width: 70%;
+  padding: 0.75rem 0.9rem;
+  background: var(--bubble-user-bg);
+  border-radius: 1.2rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* Assistant bubble */
+.chat-bubble-assistant {
+  justify-content: flex-start;
+}
+
+/* Assistant bubble overrides (NEW FIX) */
+.chat-bubble-content {
+  max-width: 100%;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 1.2rem;
+  font-size: 0.9rem;
+  transition: background 0.25s, border 0.25s, color 0.25s;
+}
+
+/* Light Mode Assistant Bubble */
+:root .chat-bubble-content {
+  background: #f3f4f6 !important;  /* Light gray */
+  border: 1px solid #e5e7eb !important;
+  color: #1f2937 !important;
+}
+
+/* Dark Mode Assistant Bubble */
+.dark .chat-bubble-content {
+  background: #0f172a !important; /* Navy / slate-900 */
+  border: 1px solid #1e293b !important;
+  color: #e2e8f0 !important;
+}
+
+/* User bubble remains unchanged */
+.chat-bubble-user > p {
+  background: #1d4ed8 !important;
+  color: #fff !important;
+}
+
+
+.assistant-text {
+  color: var(--text);
+}
+
+/* Input area */
+.chatwindow-input {
+  border-top: 1px solid var(--border);
+  padding-top: 0.75rem;
+}

@@ -1,0 +1,39 @@
+.answerfeedback-root {
+  display: inline-flex;
+  gap: 0.25rem;
+}
+
+.answerfeedback-btn {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 999px;
+  border-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 120ms ease-out, color 120ms ease-out;
+}
+
+/* outline styles */
+.answerfeedback-btn-outline-up {
+  background-color: #064e3b;
+  color: #bbf7d0;
+}
+
+.answerfeedback-btn-outline-down {
+  background-color: #7f1d1d;
+  color: #fecaca;
+}
+
+/* active styles */
+.answerfeedback-btn-active-up {
+  background-color: #22c55e;
+  color: #022c22;
+}
+
+.answerfeedback-btn-active-down {
+  background-color: #ef4444;
+  color: #450a0a;
+}

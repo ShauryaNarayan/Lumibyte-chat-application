@@ -1,0 +1,21 @@
+.themetoggle-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  transition: background-color 120ms ease;
+}
+
+.themetoggle-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.themetoggle-icon {
+  font-size: 1.2rem;
+  color: #f8fafc;
+}
+
+.dark .themetoggle-icon {
+  color: #fefce8;
+}

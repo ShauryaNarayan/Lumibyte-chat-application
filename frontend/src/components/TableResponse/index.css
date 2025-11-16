@@ -1,0 +1,36 @@
+.tableresponse-root {
+  overflow-x: auto;
+  border-radius: 0.9rem;
+  border: 1px solid #1f2937;
+  background: #020617;
+  font-size: 0.8rem;
+}
+
+.tableresponse-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableresponse-table thead {
+  background: #0f172a;
+}
+
+.tableresponse-table th,
+.tableresponse-table td {
+  padding: 0.45rem 0.6rem;
+  border-bottom: 1px solid #1f2937;
+}
+
+.tableresponse-table th {
+  text-align: left;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.tableresponse-table td {
+  color: #e5e7eb;
+}
+
+.tableresponse-table tr:last-child td {
+  border-bottom: none;
+}
